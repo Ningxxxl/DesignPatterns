@@ -1,4 +1,4 @@
-package iterator.A1;
+package iterator.a1;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
