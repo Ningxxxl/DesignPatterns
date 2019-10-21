@@ -11,7 +11,8 @@ public class TicketMaker {
     private TicketMaker() {
     }
 
-    public int getNextTicketNumber() {
+//    synchronized关键字确保多线程下工作正常
+    public synchronized int getNextTicketNumber() {
         return ticket++;
     }
 
