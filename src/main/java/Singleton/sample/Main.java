@@ -16,5 +16,7 @@ public class Main {
         } else {
             System.out.println("singleton1 和 singleton2 是不同的实例");
         }
+
+        System.out.println("End.");
     }
 }
