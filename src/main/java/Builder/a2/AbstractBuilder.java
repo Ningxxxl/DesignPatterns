@@ -30,11 +30,11 @@ public abstract class AbstractBuilder {
         }
     }
 
-    public abstract void buildTitle(String title);
+    protected abstract void buildTitle(String title);
 
-    public abstract void buildString(String string);
+    protected abstract void buildString(String string);
 
-    public abstract void buildItems(String[] items);
+    protected abstract void buildItems(String[] items);
 
-    public abstract void close();
+    protected abstract void close();
 }
