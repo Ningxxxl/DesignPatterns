@@ -3,7 +3,7 @@ package Prototype.sample.framework;
 import java.util.HashMap;
 
 /**
- * Clent（使用者）角色
+ * Client（使用者）角色
  * <p>
  * 调用createClone方法复制实例的类
  *

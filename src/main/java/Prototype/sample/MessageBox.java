@@ -37,6 +37,7 @@ public class MessageBox implements Product {
     public Product createClone() {
         Product p = null;
         try {
+            // clone()方法是 浅 拷 贝
             p = (Product) clone();
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
