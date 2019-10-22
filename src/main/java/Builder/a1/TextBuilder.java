@@ -1,4 +1,5 @@
-package Builder.a2;
+package Builder.a1;
+
 
 /**
  * ConcreteBuilder（具体的建造者）角色
@@ -6,24 +7,24 @@ package Builder.a2;
  * @author ningxy
  * @date 2019/10/22
  */
-public class TextBuilder extends AbstractBuilder {
+public class TextBuilder implements Builder {
     private StringBuffer buffer = new StringBuffer();
 
     @Override
-    public void buildTitle(String title) {
+    public void makeTitle(String title) {
         buffer.append("======================================\n");
         buffer.append("【 ").append(title).append(" 】\n");
         buffer.append('\n');
     }
 
     @Override
-    public void buildString(String string) {
+    public void makeString(String string) {
         buffer.append(" □ ").append(string).append('\n');
         buffer.append('\n');
     }
 
     @Override
-    public void buildItems(String[] items) {
+    public void makeItems(String[] items) {
         for (String item : items) {
             buffer.append("  · ").append(item).append('\n');
         }

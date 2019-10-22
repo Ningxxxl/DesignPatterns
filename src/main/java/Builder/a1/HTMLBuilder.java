@@ -1,4 +1,4 @@
-package Builder.a2;
+package Builder.a1;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -10,12 +10,12 @@ import java.io.PrintWriter;
  * @author ningxy
  * @date 2019/10/22
  */
-public class HTMLBuilder extends AbstractBuilder {
+public class HTMLBuilder implements Builder {
     private String filename;
     private PrintWriter writer;
 
     @Override
-    public void buildTitle(String title) {
+    public void makeTitle(String title) {
         filename = title + ".html";
         try {
             writer = new PrintWriter(new FileWriter(filename));
@@ -34,12 +34,12 @@ public class HTMLBuilder extends AbstractBuilder {
     }
 
     @Override
-    public void buildString(String string) {
+    public void makeString(String string) {
         writer.println("\n<p>" + string + "</p>\n");
     }
 
     @Override
-    public void buildItems(String[] items) {
+    public void makeItems(String[] items) {
         writer.println("<ul>");
         for (String item : items) {
             writer.println("<li>" + item + "</li>");

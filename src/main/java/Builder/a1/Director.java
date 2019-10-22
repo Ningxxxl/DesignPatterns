@@ -1,16 +1,14 @@
-package Builder.a2;
+package Builder.a1;
 
 import lombok.AllArgsConstructor;
 
 /**
- * Director（监工）角色
- *
  * @author ningxy
  * @date 2019/10/22
  */
 @AllArgsConstructor
 public class Director {
-    private AbstractBuilder builder;
+    private Builder builder;
 
     /**
      * 编写文档
