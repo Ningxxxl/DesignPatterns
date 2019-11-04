@@ -12,15 +12,18 @@ import AbstractFactory.factory.AbstractTray;
  * @date 2019/10/31
  */
 public class ListFactory extends AbstractFactory {
+    @Override
     public AbstractLink createLink(String caption, String url) {
-        return null;
+        return new ListLink(caption, url);
     }
 
+    @Override
     public AbstractTray createTray(String caption) {
-        return null;
+        return new ListTray(caption);
     }
 
+    @Override
     public AbstractPage createPage(String title, String author) {
-        return null;
+        return new ListPage(title, author);
     }
 }
